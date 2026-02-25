@@ -1,0 +1,133 @@
+/* 1. 기본 배경 및 폰트 설정 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9; /* 연한 그레이 배경 */
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* 2. 제목 스타일 (공통) */
+h2 {
+    color: #202124;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+/* 3. 카드형 테이블 컨테이너 */
+table {
+    width: 650px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+    overflow: hidden;
+    border: none !important;
+    margin-bottom: 30px;
+}
+
+table td, table th {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* 4. 테이블 항목 이름 (왼쪽 컬럼) */
+table td:first-child, table th {
+    background-color: #f8f9fa;
+    width: 30%;
+    font-weight: 600;
+    color: #5f6368;
+    text-align: left;
+}
+
+/* 5. 입력 필드 및 셀렉트 박스 */
+input[type="text"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+/* 6. 읽기 전용/비활성화 상태 스타일 */
+input[readonly], 
+select[disabled] {
+    background-color: #f1f3f4;
+    color: #80868b;
+    cursor: not-allowed;
+}
+
+/* 7. 버튼 영역 및 버튼 디자인 */
+.button_area, div[align="center"] > div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button, a.btn_link {
+    min-width: 100px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 메인 버튼 (등록, 수정, 저장) */
+#btnRegister, #btnModify, #btnEdit, a[href*="register"] {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#btnRegister:hover, #btnModify:hover, #btnEdit:hover {
+    background-color: #174ea6;
+}
+
+/* 삭제 버튼 */
+#btnRemove {
+    background-color: #d93025;
+    color: white;
+}
+
+#btnRemove:hover {
+    background-color: #a50e0e;
+}
+
+/* 서브 버튼 (목록, 취소) */
+#btnList {
+    background-color: #fff;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+}
+
+#btnList:hover {
+    background-color: #f8f9fa;
+    border-color: #d2d4d7;
+}
+
+/* 8. 유효성 검사 에러 메시지 */
+font[color="red"] {
+    font-size: 12px;
+    color: #d93025 !important;
+    font-weight: 500;
+    margin-top: 4px;
+    display: block;
+}

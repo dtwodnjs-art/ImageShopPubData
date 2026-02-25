@@ -1,0 +1,62 @@
+/* 기본 스타일 초기화 및 배경 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Nanum Gothic', sans-serif;
+    /* 부드러운 파스텔톤 그라데이션 배경 */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* 중앙 콘텐츠 카드 영역 */
+div[align="center"] {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 80px 40px;
+    background: rgba(255, 255, 255, 0.95); /* 반투명 화이트 */
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* 배경 흐림 효과 */
+}
+
+/* 웰컴 메시지 (h1) - 텍스트 그라데이션 적용 */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    /* 텍스트에 컬러 그라데이션 입히기 */
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1.5px;
+}
+
+/* 서버 시간 (p) - 네온 스타일 포인트 */
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background: #333; /* 다크한 배경으로 대비 */
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.05); /* 마우스 올리면 살짝 커지는 효과 */
+    background: #2575fc;
+}
+
+/* 헤더와 푸터가 들어갈 자리에 대한 여백 확보 */
+header, nav, footer {
+    width: 100%;
+    padding: 20px;
+}

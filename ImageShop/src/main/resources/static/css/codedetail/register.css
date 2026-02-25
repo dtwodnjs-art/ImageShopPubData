@@ -1,0 +1,115 @@
+/* 기본 배경 및 폰트 */
+body {
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+h2 {
+    color: #1a73e8; /* 등록 페이지는 좀 더 활기찬 블루 톤 */
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+/* 테이블 컨테이너 디자인 */
+table {
+    width: 550px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* 라벨 영역 (왼쪽 칸) */
+table td:first-child {
+    background-color: #f8f9fa;
+    width: 30%;
+    font-weight: 600;
+    color: #5f6368;
+    border-right: 1px solid #f0f0f0;
+}
+
+/* 입력 필드 (Input, Select) 스타일 */
+input[type="text"], 
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #3c4043;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* 입력창 포커스 효과 */
+input[type="text"]:focus, 
+select:focus {
+    border-color: #1a73e8;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+    outline: none;
+}
+
+/* 에러 메시지 스타일 */
+font[color="red"] {
+    font-size: 12px;
+    display: block;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* 하단 버튼 영역 */
+div[align="center"] > div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* 공통 버튼 디자인 */
+button {
+    min-width: 100px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* 등록 버튼 (btnRegister) */
+#btnRegister {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#btnRegister:hover {
+    background-color: #1557b0;
+}
+
+/* 목록 버튼 (btnList) */
+#btnList {
+    background-color: #e8eaed;
+    color: #3c4043;
+}
+
+#btnList:hover {
+    background-color: #dadce0;
+}

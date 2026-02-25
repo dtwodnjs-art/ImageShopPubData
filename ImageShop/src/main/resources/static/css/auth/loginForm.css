@@ -1,0 +1,108 @@
+/* 1. 기본 배경 및 레이아웃 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 중앙 정렬 컨테이너 */
+div[align="center"] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* 2. 로그인 카드 스타일 */
+form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 380px; /* 로그인 박스는 조금 더 슬림하게 */
+}
+
+h2 {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* 에러/로그아웃 메시지 (h2 중첩 대응) */
+h2:nth-of-type(2), h2:nth-of-type(3) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #d93025; /* 에러 메시지 */
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* 3. 테이블 레이아웃 조정 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #5f6368;
+    font-weight: 600;
+}
+
+/* 4. 입력 필드 스타일 */
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    margin-top: 4px;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+/* 체크박스 영역 (Remember Me) */
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* 5. 로그인 버튼 스타일 */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #174ea6;
+}
+
+/* 푸터/헤더 포함 시 위치 조정 */
+jsp\:include {
+    width: 100%;
+}

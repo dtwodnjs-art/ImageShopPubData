@@ -1,0 +1,106 @@
+/* 1. 기본 배경 및 정렬 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    color: #202124;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* 2. 신규 등록 링크 (버튼 스타일) */
+a[href="/user/register"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 5px rgba(26, 115, 232, 0.2);
+}
+
+a[href="/user/register"]:hover {
+    background-color: #174ea6;
+}
+
+/* 3. 테이블 디자인 (codedetail_table) */
+.codedetail_table {
+    width: 950px; /* 사용자 정보가 많으므로 폭을 넓게 설정 */
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    border: none !important; /* jsp의 border="1" 제거 */
+}
+
+/* 헤더 스타일 */
+.codedetail_table th {
+    background-color: #f8f9fa;
+    color: #5f6368;
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: 2px solid #e8eaed;
+    font-size: 14px;
+}
+
+/* 셀 스타일 */
+.codedetail_table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f1f3f4;
+    color: #3c4043;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* 행 마우스 오버 효과 */
+.codedetail_table tr:hover td {
+    background-color: #f8faff;
+    transition: background-color 0.1s;
+}
+
+/* 테이블 내 링크 스타일 (ID 클릭 시) */
+.codedetail_table td a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.codedetail_table td a:hover {
+    text-decoration: underline;
+}
+
+/* 4. 특정 데이터 정렬 및 강조 */
+/* 비밀번호 열(PW) - 보안상 너무 길어질 수 있으므로 글자 생략 처리(옵션) */
+.codedetail_table td:nth-child(3) {
+    font-family: 'Courier New', monospace;
+    color: #80868b;
+    font-size: 13px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 목록이 비었을 때 */
+td[colspan="6"] {
+    padding: 50px !important;
+    color: #9aa0a6;
+    text-align: center;
+    font-style: italic;
+}
+
+/* 등록 일자 스타일 */
+.codedetail_table td:last-child {
+    color: #70757a;
+    font-size: 13px;
+}

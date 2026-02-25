@@ -1,0 +1,93 @@
+/* 기본 배경 및 정렬 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* 신규 등록 링크 버튼화 */
+a[href="/codegroup/register"] {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4e73df;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: background-color 0.2s;
+}
+
+a[href="/codegroup/register"]:hover {
+    background-color: #2e59d9;
+}
+
+/* 테이블 디자인 */
+table {
+    width: 800px;
+    border-collapse: collapse; /* 선 겹침 방지 */
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none !important; /* jsp의 border="1" 무시 */
+}
+
+/* 테이블 헤더 */
+th {
+    background-color: #f1f3f9;
+    color: #4e73df;
+    font-weight: 700;
+    padding: 15px;
+    border-bottom: 2px solid #e3e6f0;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+/* 테이블 본문 칸 */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #edf0f7;
+    color: #5a5c69;
+    font-size: 0.9rem;
+}
+
+/* 행 마우스 오버 효과 */
+tr:hover td {
+    background-color: #f8f9fc;
+    transition: background-color 0.2s;
+}
+
+/* 테이블 내 링크 스타일 (그룹명) */
+td a {
+    color: #4e73df;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #224abe;
+}
+
+/* 목록이 비어있을 때 스타일 */
+td[colspan="3"] {
+    padding: 40px;
+    color: #b7b9cc;
+    font-style: italic;
+    text-align: center;
+}
+
+/* 날짜 열 좁게 조정 */
+td:last-child {
+    color: #858796;
+    font-family: 'Courier New', Courier, monospace; /* 날짜 숫자 가독성 */
+}

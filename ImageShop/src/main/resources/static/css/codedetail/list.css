@@ -1,0 +1,109 @@
+/* 전체 배경 및 기본 설정 */
+body {
+    font-family: 'Pretendard', 'Nanum Gothic', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* 중앙 컨텐츠 영역 */
+div[align="center"] {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* 제목 (h2) 스타일 - 홈 화면 h1과 통일감 */
+h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+/* 등록 버튼 (a태그) */
+a[href="register"] {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #2575fc;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+}
+
+a[href="register"]:hover {
+    background: #6a11cb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+}
+
+/* 테이블 스타일 */
+.codedetail_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none; /* 기존 border="1" 속성 무력화 */
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* 테이블 헤더 */
+.codedetail_table th {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+/* 테이블 데이터 셀 */
+.codedetail_table td {
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f3f5;
+    transition: background-color 0.2s;
+}
+
+/* 테이블 줄무늬 및 호버 효과 */
+.codedetail_table tr:nth-child(even) td {
+    background-color: #fafbfc;
+}
+
+.codedetail_table tr:hover td {
+    background-color: #edf2ff; /* 마우스 올렸을 때 은은한 파란색 */
+    cursor: pointer;
+}
+
+/* 테이블 내 링크 스타일 */
+.codedetail_table td a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.codedetail_table td a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+/* 데이터가 없을 때 메시지 */
+.codedetail_table td[colspan="5"] {
+    padding: 50px;
+    color: #999;
+    font-style: italic;
+}

@@ -1,0 +1,56 @@
+/* 1. 로그아웃 전용 카드 레이아웃 */
+/* 로그인 폼과 동일한 width(380px)를 공유합니다. */
+div[align="center"] form[action="/auth/logout"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px; /* 로그아웃은 조금 더 여유 있게 */
+    text-align: center;
+}
+
+/* 2. 로그아웃 안내 메시지 */
+h2 {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+/* 로그아웃 아이콘 (시각적 포인트) */
+h2::after {
+    content: '🚪'; /* 문 아이콘으로 로그아웃 암시 */
+    display: block;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+/* 3. 테이블 및 버튼 레이아웃 */
+form[action="/auth/logout"] table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+form[action="/auth/logout"] td {
+    border: none;
+    padding: 0;
+}
+
+/* 로그아웃 버튼 (강조색) */
+form[action="/auth/logout"] button {
+    width: 100%;
+    padding: 14px;
+    background-color: #5f6368; /* 로그아웃은 차분한 그레이 또는 레드 계열 권장 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form[action="/auth/logout"] button:hover {
+    background-color: #3c4043; /* 더 짙은 그레이로 변경 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

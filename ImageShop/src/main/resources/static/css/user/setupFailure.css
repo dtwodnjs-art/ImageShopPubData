@@ -1,0 +1,63 @@
+/* 1. 기본 배경 및 레이아웃 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 2. 실패 안내 카드 컨테이너 */
+div[align="center"] {
+    max-width: 500px;
+    margin: 120px auto; /* 상단 여백을 충분히 주어 시선 집중 */
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #d93025; /* 하단에 에러 포인트 컬러 바 추가 */
+}
+
+/* 3. 제목 스타일 (실패 메시지) */
+h2 {
+    color: #202124;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 경고 아이콘 효과 */
+h2::before {
+    content: '🚫'; /* 설정 불가/금지를 나타내는 아이콘 */
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* 4. 홈으로 돌아가기 링크 (버튼 스타일) */
+a[href="/"] {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #5f6368; /* 일반적인 상황이 아니므로 차분한 그레이 버튼 사용 */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+a[href="/"]:hover {
+    background-color: #3c4043;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 5. 하단 텍스트 안내 (추가 메시지가 필요할 경우) */
+div[align="center"] p {
+    color: #70757a;
+    font-size: 14px;
+    margin-top: 20px;
+}

@@ -1,0 +1,118 @@
+/* 기본 레이아웃 설정 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+/* 테이블 디자인 */
+table {
+    width: 500px;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+table tr {
+    border-bottom: 1px solid #eee;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+/* 라벨 컬럼 (첫 번째 td) */
+table td:first-child {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    width: 30%;
+    color: #555;
+}
+
+/* 입력 필드 스타일 */
+input[type="text"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+/* 읽기 전용(readonly) 필드 스타일 */
+input[readonly] {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* 에러 메시지 스타일 */
+font[color="red"] {
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* 버튼 영역 */
+div[align="center"] > div {
+    margin-top: 20px;
+}
+
+/* 버튼 공통 스타일 */
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 0 5px;
+}
+
+/* 등록/수정 버튼 (Primary) */
+#btnRegister, #btnModify {
+    background-color: #3498db;
+    color: white;
+}
+
+#btnRegister:hover, #btnModify:hover {
+    background-color: #2980b9;
+}
+
+/* 목록 버튼 (Secondary) */
+#btnList {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#btnList:hover {
+    background-color: #7f8c8d;
+}

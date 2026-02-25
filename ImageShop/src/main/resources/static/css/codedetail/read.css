@@ -1,0 +1,105 @@
+/* 전반적인 폰트 및 배경 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* 테이블 레이아웃 */
+table {
+    width: 600px;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden; /* 테두리 곡선 적용 */
+}
+
+table td {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+/* 왼쪽 항목 제목 (Label) */
+table td:first-child {
+    background-color: #fcfcfc;
+    width: 35%;
+    font-weight: 600;
+    color: #495057;
+    text-align: left;
+}
+
+/* 입력 필드 (Read-only/Disabled 스타일) */
+input[readonly], 
+select[disabled] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #f1f3f5; /* 비활성화 느낌의 배경색 */
+    color: #495057;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+/* 버튼 영역 */
+div[align="center"] > div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* 버튼 사이 간격 */
+}
+
+/* 공통 버튼 스타일 */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 수정 버튼 (Edit) - 포인트 색상 */
+#btnEdit {
+    background-color: #4dabf7;
+    color: white;
+}
+#btnEdit:hover {
+    background-color: #339af0;
+}
+
+/* 삭제 버튼 (Remove) - 경고 색상 */
+#btnRemove {
+    background-color: #ff8787;
+    color: white;
+}
+#btnRemove:hover {
+    background-color: #fa5252;
+}
+
+/* 목록 버튼 (List) - 무채색 */
+#btnList {
+    background-color: #adb5bd;
+    color: white;
+}
+#btnList:hover {
+    background-color: #868e96;
+}
+
+/* 에러 메시지 */
+font[color="red"] {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
