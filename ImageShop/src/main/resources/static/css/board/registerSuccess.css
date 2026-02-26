@@ -1,0 +1,70 @@
+/* 1. 기본 배경 및 레이아웃 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 2. 성공 메시지 카드 컨테이너 */
+div[align="center"] {
+    max-width: 550px;
+    margin: 100px auto; /* 상단 여백을 주어 중앙 배치 */
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #1a73e8; /* 상단에 포인트 컬러 바 추가 */
+}
+
+/* 3. 제목 스타일 (성공 메시지) */
+h2 {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 축하 아이콘 효과 */
+h2::before {
+    content: '🎉';
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite; /* 부드러운 바운스 애니메이션 */
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 4. 로그인 버튼 스타일 */
+a[href="/auth/login"] {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+}
+
+a[href="/auth/login"]:hover {
+    background-color: #174ea6;
+    transform: scale(1.05); /* 마우스 올렸을 때 살짝 커지는 효과 */
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.35);
+}
+
+/* 5. 보조 텍스트 (옵션: 추가적인 안내가 있을 경우) */
+div[align="center"] p {
+    color: #5f6368;
+    margin-bottom: 30px;
+    font-size: 15px;
+}

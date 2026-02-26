@@ -1,0 +1,107 @@
+/* 1. 기본 배경 및 레이아웃 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    color: #202124;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* 2. 글쓰기 버튼 스타일 (Action New) */
+a[href="/board/register"] {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #1a73e8; /* 메인 블루 */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(26, 115, 232, 0.2);
+}
+
+a[href="/board/register"]:hover {
+    background-color: #174ea6;
+    transform: translateY(-1px);
+}
+
+/* 3. 게시판 테이블 디자인 */
+table {
+    width: 900px; /* 게시판 데이터에 최적화된 폭 */
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    border: none !important; /* JSP의 border="1" 제거 */
+}
+
+/* 헤더 스타일 */
+th {
+    background-color: #f8f9fa;
+    color: #5f6368;
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: 2px solid #e8eaed;
+    font-size: 14px;
+}
+
+/* 셀 스타일 */
+td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f1f3f4;
+    color: #3c4043;
+    font-size: 14px;
+}
+
+/* 행 마우스 오버 효과 */
+tr:hover td {
+    background-color: #f8faff;
+    transition: background-color 0.1s;
+}
+
+/* 4. 제목 링크 스타일 (가장 중요) */
+td a {
+    color: #202124;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* 5. 열별 세부 정렬 및 스타일 */
+/* 번호 열 */
+td:nth-child(1) {
+    color: #80868b;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 작성자 열 */
+td:nth-child(3) {
+    color: #5f6368;
+}
+
+/* 등록일자 열 */
+td:last-child {
+    color: #9aa0a6;
+    font-size: 13px;
+}
+
+/* 목록이 비었을 때 */
+td[colspan="4"] {
+    padding: 60px !important;
+    color: #9aa0a6;
+    text-align: center;
+    font-style: italic;
+}
