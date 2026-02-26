@@ -2,6 +2,7 @@ package com.project.mapper;
 
 import java.util.List;
 
+import com.project.common.domain.PageRequest;
 import com.project.domain.Board;
 
 public interface BoardMapper {
@@ -15,5 +16,9 @@ public interface BoardMapper {
 	public int update(Board board) throws Exception;
 
 	public int remove(Board board) throws Exception;
+
+	public int count() throws Exception;
+
+	public List<Board> list(PageRequest pageRequest) throws Exception;
 
 }
