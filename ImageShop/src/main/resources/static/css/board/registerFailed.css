@@ -1,0 +1,56 @@
+/* 1. 기본 배경 및 레이아웃 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 2. 안내 메시지 카드 컨테이너 */
+div[align="center"] {
+    max-width: 500px;
+    margin: 100px auto; /* 화면 중앙 배치 */
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. 제목 스타일 (실패/안내 메시지) */
+h2 {
+    color: #d93025; /* 경고를 나타내는 레드 톤 */
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    word-break: keep-all; /* 한글 단어 끊김 방지 */
+    line-height: 1.4;
+}
+
+/* 4. 로그인 링크 (버튼 스타일) */
+a[href="/auth/login"] {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1a73e8; /* 메인 블루 테마 유지 */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(26, 115, 232, 0.2);
+}
+
+a[href="/auth/login"]:hover {
+    background-color: #174ea6;
+    transform: translateY(-2px); /* 살짝 떠오르는 효과 */
+    box-shadow: 0 6px 15px rgba(26, 115, 232, 0.3);
+}
+
+/* 5. 아이콘 효과 (선택 사항: 텍스트 위에 느낌표 등을 넣고 싶을 때) */
+h2::before {
+    content: '⚠️';
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
